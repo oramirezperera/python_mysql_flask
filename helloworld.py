@@ -1,4 +1,5 @@
 from flask import Flask, request, url_for, redirect, abort, render_template
+import mysql.connector
 
 app = Flask(__name__) #entry point of the program
 
