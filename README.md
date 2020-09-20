@@ -84,3 +84,13 @@ To the user we want to show them jsons or html pages.
 To do this we can use render_template('web.html').
 import render_template
 When you use render_template, flask is going to search a folder called template and in there is going to search for a file called web.html.
+
+### Returning Json
+
+You have to return a dictionary and define what do you want to show.
+Returning Jsons is good when you are working with APIs.
+
+### More templates
+
+When you use render_template('home.html', ) you can render variables too.
+to pass that variable in HTML use {{ variable_name }} 
