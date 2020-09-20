@@ -1,1 +1,6 @@
 <h1>This is a dummy web page</h1>
+<ul>
+    {% for usuario in usuarios %}
+        <li>{{ usuario.username }}</li>
+    {% endfor %}
+</ul>

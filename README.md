@@ -100,3 +100,12 @@ Another thing is in this syntax href="{{ url_for('static', filename='style.css')
 
 The home file will be the son, in the son we use {% extends 'base.html' %} {% block content %} {% endblock %}, with this syntax we are using the references from the parent file.
 
+### Import data from database
+
+Using the syntax {% for usuario in usuarios %} this will start a Python for loop in our HTML file, to end this script you will need to write {% endfor %}.
+In cursor you can pass the argument dictionary = True, with this they are sorted by the name because the return will not be a tuple instead will be a dictionary.
+With the dictionary=True, you can now use the for loop with usuario.username, to iterate over the usernames and print them. You can use syntax [\'\username'] too.
+
+### Insert data to the database
+
+It's important the name that you declare in the HTML input, because that's the name you will use in Python.
