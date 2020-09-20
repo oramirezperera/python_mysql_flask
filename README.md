@@ -94,3 +94,9 @@ Returning Jsons is good when you are working with APIs.
 
 When you use render_template('home.html', ) you can render variables too.
 to pass that variable in HTML use {{ variable_name }} 
+You can reuse some things like headers and footers, to do this we are going to create a new file called base.html.
+With this syntax {% block title %}{% endblock %} you have will have a parent or base html, and you can reference with this son you can change the title or re use it with other values. You can always change the values of these tags.
+Another thing is in this syntax href="{{ url_for('static', filename='style.css') }}" you can render Python code, in the first argument you have static, that is a folder that has css files, and the second argument is the name of the css file that we want to use.
+
+The home file will be the son, in the son we use {% extends 'base.html' %} {% block content %} {% endblock %}, with this syntax we are using the references from the parent file.
+
